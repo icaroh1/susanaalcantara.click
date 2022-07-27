@@ -114,8 +114,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             <!-- Headline -->
-            <h3 class="my-4"><b><span style="color:#e43b2c">¡ATENCIÓN!  </span><u>NO CIERRE NI ACTUALICE ESTA PÁGINA...</u></h3>
-
+            
+            <h3 class="my-4" style="background-color:#e43b2c; font-size:18px;"><b><span style="color:#ffcc00;">¡ATENCIÓN!  </span><u>NO CIERRE NI ACTUALICE ESTA PÁGINA...</u></h3>
+            
+            <img src="assets/img/topo.png" style="width:80%;">
+                        
                 <h4 class="my-4"><b>SU COMPRA SE HA COMPLETADO CON ÉXITO, PERO... <span style="color:#e43b2c">TIENE QUE VER</span> EL VÍDEO DE <u>CONFIRMACIÓN</u> DE SU PEDIDO:</h4>
                        
 
@@ -124,13 +127,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             <!-- Botão -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.hotmart.com/H73235049F" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">SÍ, QUIERO ESTAR <br> LIBRE DE COLESTEROL</span>
-                <span class="span-btn2">(Atención: No tendrás oportunidad de volver a entrar...)</span>
-                <a href="https://pay.hotmart.com/H73235049F">AGREGAR AL CARRITO</a>
-              </a>
-            </div>
+          
+            
+            <!-- HOTMART - Upsell Widget -->
+<div id="box_hotmart"></div>
+<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+<script>
+opts = {
+key: 'USL-76852-212544-ef8e39e8fb274f64a5090935cc89f691',
+width: '650' ,
+height: '420'
+};
+Upsell.Widget.show(opts);
+</script>
+<!-- HOTMART - Upsell Widget [end] -->
+
+            
+           
 
             <!-- Termos de Uso e Política de Privacidade -->
             <div class="text-white mt-4"><a href="termos.html" class="text-white">Terminos de uso</a> | <a href="privacidade.html" class="text-white">Política de privacidad</a>
